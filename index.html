@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARENERA 5 HERMANOS</title>
+    <link rel="website icon" type="png" href="icono.png">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px; /* Agrega un padding para márgenes en móviles */
+            box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+        }
+        img {
+            max-width: 100%; /* Se adapta al ancho de la pantalla */
+            height: auto; /* Mantiene la proporción de la imagen */
+            width: 700px; /* Ancho fijo para pantallas grandes */
+            margin: 0 auto; /* Centra la imagen */
+        }
+        button {
+            margin-top: 20px; /* Agrega un margen superior para separar el botón de la imagen */
+            padding: 1.3em 3em;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Asegúrate de que todas las propiedades tengan transiciones */
+            cursor: pointer;
+            outline: none;
+        }
+
+        button:hover {
+            background-color: #ffcb11;
+            box-shadow: 0px 15px 20px rgba(206, 203, 24, 0.4);
+            color: #fff;
+            transform: translateY(-7px);
+        }
+
+        button:active {
+            transform: translateY(-1px);
+        }
+
+        /* Estilos para dispositivos móviles */
+        @media (max-width: 768px) {
+            img {
+                width: 100%; /* El logo ocupa el 100% del ancho en móviles */
+                max-width: 300px; /* Limita el ancho máximo del logo en móviles */
+            }
+            button {
+                padding: 1em 2em; /* Ajusta el padding del botón en móviles */
+                font-size: 10px; /* Ajusta el tamaño de la fuente en móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Logo de la empresa">
+    <button onclick="continuar()">Click para continuar</button>
+
+    <script>
+        function continuar() {
+            // Redirige a otra página
+            window.location.href = "web/a5h.html"; // Cambia "pagina_siguiente.html" por la URL de la página a la que deseas redirigir
+        }
+    </script>
+</body>
+</html>

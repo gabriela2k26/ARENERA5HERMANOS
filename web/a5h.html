@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARENERA 5 HERMANOS</title>
+    <link rel="website icon" type="png" href="icono.png">
+    
+    <!-- Include Animate.css -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+    />
+
+    <style>
+         @font-face {
+           font-family: 'mifuente1';
+           src: url('Montserrat-Light.ttf') format('truetype');
+       } 
+
+       @font-face {
+           font-family: 'mifuente2';
+           src: url('SpecialElite.ttf');
+       }
+
+       body {
+           background-color: #000000; /* Fondo negro */
+           margin: 0;
+       }
+
+       /* Estilos para el header */
+       header {
+           background-color: rgba(8, 7, 0, 0.707); /* Fondo con transparencia */
+           height: 100vh; /* Ocupa toda la pantalla */
+           width: 100%; /* Ocupa toda la pantalla */
+           position: relative; /* Para que el fondo de la imagen se muestre detrás */
+           display: flex; /* Usamos flexbox */
+           flex-direction: column; /* Coloca los elementos en columna */
+           justify-content: center; /* Centra verticalmente */
+           align-items: center; /* Centra horizontalmente */
+           text-align: center; /* Centra el texto */
+       }
+
+       img.fondo {
+           position: absolute; 
+           top: 0; 
+           left: 0;   
+           width: 100%; 
+           height: 100%; 
+           object-fit: cover; 
+           z-index: -1; /* Fondo detrás del contenido */
+       }
+
+       img.icono {
+           max-width: 90%; /* Ajusta el tamaño del ícono aquí para móviles */
+           width: 400px; /* Tamaño fijo para pantallas grandes */
+           height: auto; /* Mantiene la proporción */
+           margin-bottom: 20px; /* Espacio entre el logo y el texto */
+       }
+
+       img.icono2 {
+           position: absolute; /* Posiciona el icono en la esquina */
+           top: 20px; /* Ajusta la distancia desde la parte superior */
+           left: 20px; /* Ajusta la distancia desde la izquierda */
+           width: 100px; /* Tamaño del icono */
+           height: auto; /* Mantiene la proporción */
+       }
+
+       /* Estilos para el texto */
+       .texto {
+           color: #FFFFFF; /* Color del texto */
+           font-family: 'mifuente1'; /* Fuente del texto */
+           font-size: 4vw; /* Tamaño de la fuente en relación al ancho de la vista */
+           margin: 0; /* Elimina el margen por defecto */
+           padding: 0 10px; /* Espacio lateral para el texto */
+       }
+
+       /* Estilos para el contenedor */
+       .container {
+           background-color: #000000; /* Fondo blanco */
+           height: 100vh; /* Ocupa toda la pantalla */
+           display: flex; /* Usamos flexbox para centrar contenido si es necesario */
+           justify-content: center; /* Centra horizontalmente */
+           align-items: center; /* Centra verticalmente */
+           text-align: center; /* Centra el texto */
+           color: #ffffff; /* Color del texto dentro del contenedor */
+       }
+
+       /* Media query para pantallas pequeñas */
+       @media (max-width: 767px) {
+           img.icono {
+               width: 100%; /* El logo ocupa el 100% del ancho en móviles */
+               max-width: 300px; /* Limita el ancho máximo del logo en móviles */
+           }
+           .texto {
+               font-size: 4vw; /* Tamaño de fuente en relación al ancho de la vista */
+               margin: 0 20px; /* Margen a los lados para móviles */
+           }
+       }
+
+       /* Media query para pantallas grandes */
+       @media (min-width: 768px) {
+           img.icono {
+               width: 300px; /* Tamaño más pequeño para pantallas grandes */
+           }
+
+           .texto {
+               font-size: 20px; /* Tamaño de fuente fijo para pantallas grandes */
+           }
+       }
+
+       @media (min-width: 1200px) {
+           img.icono {
+               width: 400px; /* Tamaño más grande para pantallas extra grandes */
+           }
+
+           .texto {
+               font-size: 24px; /* Tamaño de fuente más grande para pantallas extra grandes */
+           }
+       }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="fondo.jpg" alt="fondo-header" class="fondo"> 
+        <img src="icono2.png" alt="icono pequeño" class="icono2"> 
+        <img src="logo3.png" alt="logo" class="icono"> 
+        <p class="texto animate__animated animate__fadeInDown">Venta de arena de mina de la mejor calidad y al mejor precio del mercado.</p> <!-- Texto debajo de la imagen -->
+    </header>
+
+    <div class="container">
+        <p>Contenido del contenedor debajo del header.</p> <!-- Puedes agregar más contenido aquí -->
+    </div>
+    
+</body>
+</html>
